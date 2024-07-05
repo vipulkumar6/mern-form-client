@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
   display: flex;
-  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_inner {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media screen and (max-width:900px) {
+
+  .form_inner {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 30px 0;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .form-content {
+    flex: 2;
+    padding: 20px !important;
+    background-color: #fff;
+  }
+
+  .form-container {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+.form-image {
+  background-color: #000;
+  color: #fff;
+  flex: 1;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-basis: 13%;
 }
 
-.App-link {
-  color: #61dafb;
+.form-image-content {
+  height: 100%;
+  text-align: center;
+  background: url('../public/images/kitchen.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 80px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.swal-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.form-image-content p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.form-content {
+  flex: 2;
+  padding: 90px 100px;
+  background-color: #fff;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #7a7878;
+}
+
+.form-group {
+  position: relative;
+  margin: 10px 0 15px 0;
+
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #a09f9f;
+  outline: none;
+  border-radius: 9px;
+  color: #7a7878;
+}
+
+.form-group span {
+  color: red;
+}
+
+.form-group .error {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: red;
+  font-size: 12px;
+}
+
+.file-upload {
+  border: 2px dashed #ccc;
+  padding: 50px 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.file-upload input {
+  display: none;
+}
+
+.input:focus-within {
+  border: 1.5px solid #478af7;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.file-upload p {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.file-upload span {
+  color: #E80125;
+}
+
+
+.button {
+  background-color: #E80125;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 24px;
+  width: 40%;
+  margin: 13px 0 10px 0px;
+}
+
+.button:hover {
+  background-color: darkred;
+}
+
+.form_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_row .form-group {
+  width: 45%;
+}
+
+.submited_data {
+  width: 90%;
+}
+
+.submited_data h1 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.view_button,
+.back_button {
+  color: #478af7;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
 }
