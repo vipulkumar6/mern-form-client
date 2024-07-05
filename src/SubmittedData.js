@@ -13,7 +13,7 @@ const SubmittedData = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/getdata');
+                const response = await axios.get('https://mern-form-validation.onrender.com/getdata');
                 console.log(response.data);
                 const formattedData = response.data.map(item => ({
                     ...item,

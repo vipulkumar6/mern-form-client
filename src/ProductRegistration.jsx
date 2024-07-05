@@ -84,7 +84,7 @@ const ProductRegistrationForm = () => {
         setIsSubmitting(true);
 
         try {
-            const response = await axios.post('http://localhost:5000/register', formData);
+            const response = await axios.post('https://mern-form-validation.onrender.com/register', formData);
             console.log('Form data sent:', formData);
             console.log('Server response:', response.data);
             setFormData({
